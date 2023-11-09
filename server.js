@@ -3,7 +3,7 @@ const { connection } = require("./config/connection");
 
 const app = express();
 const PORT = 3000; // Will change.
-connection()
+connection();
 
 app.listen(PORT, (error) => {
   if (!error) {
