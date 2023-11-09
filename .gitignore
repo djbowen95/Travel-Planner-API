@@ -1,1 +1,9 @@
+# Node modules
 node_modules/
+
+# Environment variables
+.env
+# NOTE: these are needed for:
+# DB_NAME
+# USER
+# PASSWORD
