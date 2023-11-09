@@ -1,8 +1,8 @@
 {
   "name": "travel-planner-api",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A portfolio mini-project: back-end for a travelling planning application, that connects to an MySQL database using Sequelize for ODM.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "test"
   },
