@@ -18,5 +18,12 @@ app.listen(PORT, (error) => {
     }
 }); // Need to change this. 
 
+try {
+    sequelize.authenticate();
+    console.log('Connection has been established successfully with the database.');
+  } catch (error) {
+    console.error('Unable to connect to the database:', error);
+  }
+
 // Tell it where to listen
 // Start express
