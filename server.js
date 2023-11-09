@@ -1,6 +1,13 @@
 const express = require('express');
+const { Sequelize } = require('sequelize');
+
 const app = express();
 const PORT = 3000; // Will change.
+
+const sequelize = new Sequelize('library_db', 'root', 'password', {
+    host: 'localhost',
+    dialect: 'mysql'
+})
 
 app.listen(PORT, (error) => {
     if(!error) {
