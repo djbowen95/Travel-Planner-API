@@ -1,4 +1,3 @@
-// Traveller model here
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
@@ -26,6 +25,7 @@ Traveller.init(
   {
     sequelize,
     modelName: "Traveller",
+    freezeTableName: true
   }
 );
 
