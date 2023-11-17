@@ -1,16 +1,6 @@
 // Traveller model here
-const { Sequelize, DataTypes, Model } = require("sequelize");
-require("dotenv").config();
-
-const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASSWORD,
-  {
-    host: "localhost",
-    dialect: "mysql",
-  }
-);
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection-other");
 
 class Traveller extends Model {}
 
