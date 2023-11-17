@@ -4,7 +4,8 @@
   "description": "A portfolio mini-project: back-end for a travelling planning application, that connects to an MySQL database using Sequelize for ODM.",
   "main": "server.js",
   "scripts": {
-    "test": "npx eslint **/*.js"
+    "test": "npx eslint **/*.js",
+    "lint": "npx eslint server.js"
   },
   "repository": {
     "type": "git",
